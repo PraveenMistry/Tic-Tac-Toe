@@ -69,7 +69,7 @@ function checkTie(){
 }
 
 function bestSpot() {
-	return emptySquares()[0];
+	return minimax(origBoard, aiPlayer).index;
 }
 
 function turnClick(square){
